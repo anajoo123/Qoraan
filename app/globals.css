@@ -1,0 +1,148 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --font-quran: var(--font-amiri), "Amiri", Georgia, serif;
+  --font-sans: var(--font-tajawal), "Tajawal", system-ui, sans-serif;
+}
+
+@layer base {
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #050608;
+    overscroll-behavior: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Rich, unmistakable 3D-feel Steadicam & parallax camera motions (15s continuous glide) */
+@keyframes cameraGlideForward {
+  0% {
+    transform: scale(1.03) translate3d(-2.8%, 1.4%, 0) rotate(-0.35deg);
+  }
+  100% {
+    transform: scale(1.22) translate3d(2.8%, -1.8%, 0) rotate(0.45deg);
+  }
+}
+
+@keyframes cameraRiseLight {
+  0% {
+    transform: scale(1.05) translate3d(1.6%, 2.8%, 0) rotate(0.3deg);
+  }
+  100% {
+    transform: scale(1.24) translate3d(-2.2%, -2.6%, 0) rotate(-0.35deg);
+  }
+}
+
+@keyframes cameraDriftHorizontal {
+  0% {
+    transform: scale(1.1) translate3d(3.6%, 0.8%, 0) rotate(-0.25deg);
+  }
+  100% {
+    transform: scale(1.21) translate3d(-3.6%, -1.2%, 0) rotate(0.35deg);
+  }
+}
+
+@keyframes cameraPanValley {
+  0% {
+    transform: scale(1.08) translate3d(-3.6%, -1%, 0) rotate(0.3deg);
+  }
+  100% {
+    transform: scale(1.22) translate3d(3.4%, 1.4%, 0) rotate(-0.3deg);
+  }
+}
+
+@keyframes cameraCanyonApproach {
+  0% {
+    transform: scale(1.04) translate3d(1.8%, 2%, 0) rotate(-0.2deg);
+  }
+  100% {
+    transform: scale(1.24) translate3d(-2.4%, -2.2%, 0) rotate(0.4deg);
+  }
+}
+
+@keyframes cameraDawnBreathe {
+  0% {
+    transform: scale(1.05) translate3d(-2%, 1.6%, 0) rotate(0.2deg);
+  }
+  100% {
+    transform: scale(1.2) translate3d(2.2%, -1.4%, 0) rotate(-0.25deg);
+  }
+}
+
+/* Foreground volumetric light shafts & haze drift (moves faster than landscape for real 3D depth) */
+@keyframes volumetricRaysDrift {
+  0% {
+    transform: translate3d(-5%, -3%, 0) rotate(-14deg) scale(1.05);
+  }
+  50% {
+    transform: translate3d(4%, 2%, 0) rotate(-11deg) scale(1.12);
+  }
+  100% {
+    transform: translate3d(-5%, -3%, 0) rotate(-14deg) scale(1.05);
+  }
+}
+
+@keyframes foregroundHazeDrift {
+  0% {
+    transform: translate3d(-6%, 0, 0) scale(1.08);
+  }
+  50% {
+    transform: translate3d(6%, -2%, 0) scale(1.14);
+  }
+  100% {
+    transform: translate3d(-6%, 0, 0) scale(1.08);
+  }
+}
+
+.camera-motion-0 {
+  animation: cameraGlideForward 15s ease-in-out infinite alternate;
+}
+
+.camera-motion-1 {
+  animation: cameraRiseLight 16s ease-in-out infinite alternate;
+}
+
+.camera-motion-2 {
+  animation: cameraDriftHorizontal 15s ease-in-out infinite alternate;
+}
+
+.camera-motion-3 {
+  animation: cameraPanValley 16s ease-in-out infinite alternate;
+}
+
+.camera-motion-4 {
+  animation: cameraCanyonApproach 15s ease-in-out infinite alternate;
+}
+
+.camera-motion-5 {
+  animation: cameraDawnBreathe 16s ease-in-out infinite alternate;
+}
+
+.volumetric-rays {
+  animation: volumetricRaysDrift 18s ease-in-out infinite;
+}
+
+.foreground-haze {
+  animation: foregroundHazeDrift 22s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .camera-motion-0,
+  .camera-motion-1,
+  .camera-motion-2,
+  .camera-motion-3,
+  .camera-motion-4,
+  .camera-motion-5,
+  .volumetric-rays,
+  .foreground-haze {
+    animation: none;
+    transform: scale(1.04);
+  }
+}
