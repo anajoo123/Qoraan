@@ -1,0 +1,557 @@
+[
+  {
+    "ayahNumber": 1,
+    "startTime": 0.0,
+    "endTime": 11.844
+  },
+  {
+    "ayahNumber": 2,
+    "startTime": 11.844,
+    "endTime": 21.924
+  },
+  {
+    "ayahNumber": 3,
+    "startTime": 21.924,
+    "endTime": 42.588
+  },
+  {
+    "ayahNumber": 4,
+    "startTime": 42.588,
+    "endTime": 57.924
+  },
+  {
+    "ayahNumber": 5,
+    "startTime": 57.924,
+    "endTime": 74.916
+  },
+  {
+    "ayahNumber": 6,
+    "startTime": 74.916,
+    "endTime": 109.692
+  },
+  {
+    "ayahNumber": 7,
+    "startTime": 109.692,
+    "endTime": 119.304
+  },
+  {
+    "ayahNumber": 8,
+    "startTime": 119.304,
+    "endTime": 134.316
+  },
+  {
+    "ayahNumber": 9,
+    "startTime": 134.316,
+    "endTime": 148.104
+  },
+  {
+    "ayahNumber": 10,
+    "startTime": 148.104,
+    "endTime": 170.28
+  },
+  {
+    "ayahNumber": 11,
+    "startTime": 170.28,
+    "endTime": 182.34
+  },
+  {
+    "ayahNumber": 12,
+    "startTime": 182.34,
+    "endTime": 191.016
+  },
+  {
+    "ayahNumber": 13,
+    "startTime": 191.016,
+    "endTime": 208.332
+  },
+  {
+    "ayahNumber": 14,
+    "startTime": 208.332,
+    "endTime": 221.724
+  },
+  {
+    "ayahNumber": 15,
+    "startTime": 221.724,
+    "endTime": 244.62
+  },
+  {
+    "ayahNumber": 16,
+    "startTime": 244.62,
+    "endTime": 254.016
+  },
+  {
+    "ayahNumber": 17,
+    "startTime": 254.016,
+    "endTime": 282.06
+  },
+  {
+    "ayahNumber": 18,
+    "startTime": 282.06,
+    "endTime": 317.16
+  },
+  {
+    "ayahNumber": 19,
+    "startTime": 317.16,
+    "endTime": 339.768
+  },
+  {
+    "ayahNumber": 20,
+    "startTime": 339.768,
+    "endTime": 350.892
+  },
+  {
+    "ayahNumber": 21,
+    "startTime": 350.892,
+    "endTime": 394.416
+  },
+  {
+    "ayahNumber": 22,
+    "startTime": 394.416,
+    "endTime": 406.404
+  },
+  {
+    "ayahNumber": 23,
+    "startTime": 406.404,
+    "endTime": 439.596
+  },
+  {
+    "ayahNumber": 24,
+    "startTime": 439.596,
+    "endTime": 462.168
+  },
+  {
+    "ayahNumber": 25,
+    "startTime": 462.168,
+    "endTime": 491.688
+  },
+  {
+    "ayahNumber": 26,
+    "startTime": 491.688,
+    "endTime": 519.084
+  },
+  {
+    "ayahNumber": 27,
+    "startTime": 519.084,
+    "endTime": 529.272
+  },
+  {
+    "ayahNumber": 28,
+    "startTime": 529.272,
+    "endTime": 546.084
+  },
+  {
+    "ayahNumber": 29,
+    "startTime": 546.084,
+    "endTime": 557.748
+  },
+  {
+    "ayahNumber": 30,
+    "startTime": 557.748,
+    "endTime": 575.244
+  },
+  {
+    "ayahNumber": 31,
+    "startTime": 575.244,
+    "endTime": 620.784
+  },
+  {
+    "ayahNumber": 32,
+    "startTime": 620.784,
+    "endTime": 641.592
+  },
+  {
+    "ayahNumber": 33,
+    "startTime": 641.592,
+    "endTime": 659.448
+  },
+  {
+    "ayahNumber": 34,
+    "startTime": 659.448,
+    "endTime": 670.068
+  },
+  {
+    "ayahNumber": 35,
+    "startTime": 670.068,
+    "endTime": 679.608
+  },
+  {
+    "ayahNumber": 36,
+    "startTime": 679.608,
+    "endTime": 710.64
+  },
+  {
+    "ayahNumber": 37,
+    "startTime": 710.64,
+    "endTime": 738.9
+  },
+  {
+    "ayahNumber": 38,
+    "startTime": 738.9,
+    "endTime": 767.016
+  },
+  {
+    "ayahNumber": 39,
+    "startTime": 767.016,
+    "endTime": 778.572
+  },
+  {
+    "ayahNumber": 40,
+    "startTime": 778.572,
+    "endTime": 828.828
+  },
+  {
+    "ayahNumber": 41,
+    "startTime": 828.828,
+    "endTime": 847.296
+  },
+  {
+    "ayahNumber": 42,
+    "startTime": 847.296,
+    "endTime": 864.036
+  },
+  {
+    "ayahNumber": 43,
+    "startTime": 864.036,
+    "endTime": 895.86
+  },
+  {
+    "ayahNumber": 44,
+    "startTime": 895.86,
+    "endTime": 904.932
+  },
+  {
+    "ayahNumber": 45,
+    "startTime": 904.932,
+    "endTime": 917.82
+  },
+  {
+    "ayahNumber": 46,
+    "startTime": 917.82,
+    "endTime": 947.808
+  },
+  {
+    "ayahNumber": 47,
+    "startTime": 947.808,
+    "endTime": 961.452
+  },
+  {
+    "ayahNumber": 48,
+    "startTime": 961.452,
+    "endTime": 980.244
+  },
+  {
+    "ayahNumber": 49,
+    "startTime": 980.244,
+    "endTime": 989.532
+  },
+  {
+    "ayahNumber": 50,
+    "startTime": 989.532,
+    "endTime": 1011.24
+  },
+  {
+    "ayahNumber": 51,
+    "startTime": 1011.24,
+    "endTime": 1037.628
+  },
+  {
+    "ayahNumber": 52,
+    "startTime": 1037.628,
+    "endTime": 1050.552
+  },
+  {
+    "ayahNumber": 53,
+    "startTime": 1050.552,
+    "endTime": 1076.904
+  },
+  {
+    "ayahNumber": 54,
+    "startTime": 1076.904,
+    "endTime": 1091.772
+  },
+  {
+    "ayahNumber": 55,
+    "startTime": 1091.772,
+    "endTime": 1101.06
+  },
+  {
+    "ayahNumber": 56,
+    "startTime": 1101.06,
+    "endTime": 1119.348
+  },
+  {
+    "ayahNumber": 57,
+    "startTime": 1119.348,
+    "endTime": 1131.048
+  },
+  {
+    "ayahNumber": 58,
+    "startTime": 1131.048,
+    "endTime": 1140.732
+  },
+  {
+    "ayahNumber": 59,
+    "startTime": 1140.732,
+    "endTime": 1156.608
+  },
+  {
+    "ayahNumber": 60,
+    "startTime": 1156.608,
+    "endTime": 1163.916
+  },
+  {
+    "ayahNumber": 61,
+    "startTime": 1163.916,
+    "endTime": 1171.116
+  },
+  {
+    "ayahNumber": 62,
+    "startTime": 1171.116,
+    "endTime": 1190.772
+  },
+  {
+    "ayahNumber": 63,
+    "startTime": 1190.772,
+    "endTime": 1220.148
+  },
+  {
+    "ayahNumber": 64,
+    "startTime": 1220.148,
+    "endTime": 1238.4
+  },
+  {
+    "ayahNumber": 65,
+    "startTime": 1238.4,
+    "endTime": 1263.456
+  },
+  {
+    "ayahNumber": 66,
+    "startTime": 1263.456,
+    "endTime": 1287.72
+  },
+  {
+    "ayahNumber": 67,
+    "startTime": 1287.72,
+    "endTime": 1315.548
+  },
+  {
+    "ayahNumber": 68,
+    "startTime": 1315.548,
+    "endTime": 1351.98
+  },
+  {
+    "ayahNumber": 69,
+    "startTime": 1351.98,
+    "endTime": 1368.684
+  },
+  {
+    "ayahNumber": 70,
+    "startTime": 1368.684,
+    "endTime": 1388.016
+  },
+  {
+    "ayahNumber": 71,
+    "startTime": 1388.016,
+    "endTime": 1394.784
+  },
+  {
+    "ayahNumber": 72,
+    "startTime": 1394.784,
+    "endTime": 1406.088
+  },
+  {
+    "ayahNumber": 73,
+    "startTime": 1406.088,
+    "endTime": 1416.204
+  },
+  {
+    "ayahNumber": 74,
+    "startTime": 1416.204,
+    "endTime": 1424.448
+  },
+  {
+    "ayahNumber": 75,
+    "startTime": 1424.448,
+    "endTime": 1435.212
+  },
+  {
+    "ayahNumber": 76,
+    "startTime": 1435.212,
+    "endTime": 1471.464
+  },
+  {
+    "ayahNumber": 77,
+    "startTime": 1471.464,
+    "endTime": 1492.452
+  },
+  {
+    "ayahNumber": 78,
+    "startTime": 1492.452,
+    "endTime": 1507.86
+  },
+  {
+    "ayahNumber": 79,
+    "startTime": 1507.86,
+    "endTime": 1526.004
+  },
+  {
+    "ayahNumber": 80,
+    "startTime": 1526.004,
+    "endTime": 1557.144
+  },
+  {
+    "ayahNumber": 81,
+    "startTime": 1557.144,
+    "endTime": 1576.224
+  },
+  {
+    "ayahNumber": 82,
+    "startTime": 1576.224,
+    "endTime": 1592.928
+  },
+  {
+    "ayahNumber": 83,
+    "startTime": 1592.928,
+    "endTime": 1615.068
+  },
+  {
+    "ayahNumber": 84,
+    "startTime": 1615.068,
+    "endTime": 1637.676
+  },
+  {
+    "ayahNumber": 85,
+    "startTime": 1637.676,
+    "endTime": 1651.284
+  },
+  {
+    "ayahNumber": 86,
+    "startTime": 1651.284,
+    "endTime": 1664.964
+  },
+  {
+    "ayahNumber": 87,
+    "startTime": 1664.964,
+    "endTime": 1694.088
+  },
+  {
+    "ayahNumber": 88,
+    "startTime": 1694.088,
+    "endTime": 1717.2
+  },
+  {
+    "ayahNumber": 89,
+    "startTime": 1717.2,
+    "endTime": 1726.596
+  },
+  {
+    "ayahNumber": 90,
+    "startTime": 1726.596,
+    "endTime": 1750.428
+  },
+  {
+    "ayahNumber": 91,
+    "startTime": 1750.428,
+    "endTime": 1759.824
+  },
+  {
+    "ayahNumber": 92,
+    "startTime": 1759.824,
+    "endTime": 1768.788
+  },
+  {
+    "ayahNumber": 93,
+    "startTime": 1768.788,
+    "endTime": 1780.452
+  },
+  {
+    "ayahNumber": 94,
+    "startTime": 1780.452,
+    "endTime": 1795.176
+  },
+  {
+    "ayahNumber": 95,
+    "startTime": 1795.176,
+    "endTime": 1801.512
+  },
+  {
+    "ayahNumber": 96,
+    "startTime": 1801.512,
+    "endTime": 1827.936
+  },
+  {
+    "ayahNumber": 97,
+    "startTime": 1827.936,
+    "endTime": 1838.232
+  },
+  {
+    "ayahNumber": 98,
+    "startTime": 1838.232,
+    "endTime": 1846.512
+  },
+  {
+    "ayahNumber": 99,
+    "startTime": 1846.512,
+    "endTime": 1870.668
+  },
+  {
+    "ayahNumber": 100,
+    "startTime": 1870.668,
+    "endTime": 1924.236
+  },
+  {
+    "ayahNumber": 101,
+    "startTime": 1924.236,
+    "endTime": 1945.62
+  },
+  {
+    "ayahNumber": 102,
+    "startTime": 1945.62,
+    "endTime": 1960.488
+  },
+  {
+    "ayahNumber": 103,
+    "startTime": 1960.488,
+    "endTime": 1968.048
+  },
+  {
+    "ayahNumber": 104,
+    "startTime": 1968.048,
+    "endTime": 1975.536
+  },
+  {
+    "ayahNumber": 105,
+    "startTime": 1975.536,
+    "endTime": 1987.38
+  },
+  {
+    "ayahNumber": 106,
+    "startTime": 1987.38,
+    "endTime": 1994.94
+  },
+  {
+    "ayahNumber": 107,
+    "startTime": 1994.94,
+    "endTime": 2012.148
+  },
+  {
+    "ayahNumber": 108,
+    "startTime": 2012.148,
+    "endTime": 2033.46
+  },
+  {
+    "ayahNumber": 109,
+    "startTime": 2033.46,
+    "endTime": 2062.368
+  },
+  {
+    "ayahNumber": 110,
+    "startTime": 2062.368,
+    "endTime": 2093.616
+  },
+  {
+    "ayahNumber": 111,
+    "startTime": 2093.616,
+    "endTime": 2130.552
+  }
+]
