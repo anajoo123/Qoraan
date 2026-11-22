@@ -1,4 +1,4 @@
-const CACHE_NAME = 'bismillah-pwa-v1';
+const CACHE_NAME = 'bismillah-pwa-v2';
 const SHELL_ASSETS = [
   '/',
   '/manifest.webmanifest',
@@ -37,14 +37,17 @@ self.addEventListener('fetch', (event) => {
   if (request.headers.has('range')) return;
 
   const url = new URL(request.url);
+  if (url.origin !== self.location.origin) return;
 
   // Navigation requests: network first with offline shell fallback
   if (request.mode === 'navigate') {
     event.respondWith(
       fetch(request)
         .then((response) => {
-          const clone = response.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
+          if (response.ok) {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
+          }
           return response;
         })
         .catch(() => caches.match('/'))
@@ -52,15 +55,31 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Same-origin static assets, optimized images, and local audio: cache first for zero-lag mobile load
+  // Next.js chunks & optimized images: network first so dev/deploy manifests never mismatch, with offline fallback
   if (
-    url.origin === self.location.origin &&
-    (url.pathname.startsWith('/_next/static/') ||
-      url.pathname.startsWith('/_next/image') ||
-      url.pathname.startsWith('/audio/') ||
-      url.pathname.endsWith('.png') ||
-      url.pathname.endsWith('.jpg') ||
-      url.pathname.endsWith('.woff2'))
+    url.pathname.startsWith('/_next/static/') ||
+    url.pathname.startsWith('/_next/image')
+  ) {
+    event.respondWith(
+      fetch(request)
+        .then((response) => {
+          if (response.ok) {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
+          }
+          return response;
+        })
+        .catch(() => caches.match(request))
+    );
+    return;
+  }
+
+  // Local audio, icons, artwork, and fonts: cache first for zero-lag mobile load
+  if (
+    url.pathname.startsWith('/audio/') ||
+    url.pathname.endsWith('.png') ||
+    url.pathname.endsWith('.jpg') ||
+    url.pathname.endsWith('.woff2')
   ) {
     event.respondWith(
       caches.match(request).then(
