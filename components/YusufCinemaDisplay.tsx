@@ -2,8 +2,10 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { AnimatePresence, motion } from 'motion/react';
 import { Play } from 'lucide-react';
+import AdSenseBanner from './AdSenseBanner';
 import AtmosphericParticles from './AtmosphericParticles';
 import PWAInstallButton from './PWAInstallButton';
 import { useOnlineStatus } from '@/hooks/usePWAInstall';
@@ -542,14 +544,16 @@ export default function YusufCinemaDisplay() {
 
               <PWAInstallButton />
 
+              <AdSenseBanner className="mt-6" />
+
               {audioError && (
                 <p className="mt-5 text-sm text-rose-300" role="alert">
                   {audioError}
                 </p>
               )}
 
-              {/* Cinematic Studio Signature */}
-              <footer className="mt-8 pt-5 border-t border-amber-200/10 flex flex-col items-center gap-1 text-center">
+              {/* Cinematic Studio Signature & AdSense Compliance Links */}
+              <footer className="mt-8 pt-5 border-t border-amber-200/10 flex flex-col items-center gap-2 text-center">
                 <span
                   dir="ltr"
                   className="text-[11px] sm:text-xs font-semibold tracking-[0.28em] text-amber-300/85 drop-shadow-[0_1px_10px_rgba(251,191,36,0.25)]"
@@ -559,6 +563,31 @@ export default function YusufCinemaDisplay() {
                 <p className="text-[11px] sm:text-xs text-amber-100/60">
                   اترك أثر طيب · لنا لقاء آخر
                 </p>
+                <nav
+                  aria-label="روابط التطبيق"
+                  className="mt-1 flex flex-wrap items-center justify-center gap-3 text-[11px] text-amber-100/50"
+                >
+                  <Link
+                    href="/about"
+                    className="hover:text-amber-200 transition-colors"
+                  >
+                    عن التطبيق وقصة سورة يوسف
+                  </Link>
+                  <span aria-hidden="true">·</span>
+                  <Link
+                    href="/privacy"
+                    className="hover:text-amber-200 transition-colors"
+                  >
+                    سياسة الخصوصية
+                  </Link>
+                  <span aria-hidden="true">·</span>
+                  <Link
+                    href="/contact"
+                    className="hover:text-amber-200 transition-colors"
+                  >
+                    تواصل معنا
+                  </Link>
+                </nav>
               </footer>
             </div>
           </motion.section>

@@ -1,6 +1,10 @@
 import type { Metadata, Viewport } from 'next';
+import Script from 'next/script';
 import { Amiri, Tajawal } from 'next/font/google';
 import './globals.css';
+
+const ADSENSE_CLIENT =
+  process.env.NEXT_PUBLIC_ADSENSE_CLIENT || 'ca-pub-4557222726740441';
 
 const amiri = Amiri({
   subsets: ['arabic'],
@@ -20,6 +24,9 @@ export const metadata: Metadata = {
   title: 'بسم الله · تلاوات ومشاهد قرآنية',
   description:
     'تطبيق خفيف للتلاوات القرآنية الخاشعة مع مشاهد واقعية متحركة تشرح الصدر.',
+  other: {
+    'google-adsense-account': ADSENSE_CLIENT,
+  },
   appleWebApp: {
     capable: true,
     statusBarStyle: 'black-translucent',
@@ -69,9 +76,16 @@ export default function RootLayout({
     >
       <body
         suppressHydrationWarning
-        className="bg-[#050608] text-amber-50 antialiased selection:bg-amber-500/30 overflow-hidden"
+        className="min-h-[100dvh] bg-[#050608] text-amber-50 antialiased selection:bg-amber-500/30"
       >
         {children}
+        <Script
+          id="google-adsense"
+          async
+          strategy="afterInteractive"
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+          crossOrigin="anonymous"
+        />
       </body>
     </html>
   );
